@@ -1,4 +1,5 @@
 # __authors__ = Jackie Cohen, Maulishree Pandey
+#Michele Gee
 # An application in Flask where you can log in and create user accounts to save Gif collections
 # SI 364 - W18 - HW4
 
