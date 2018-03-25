@@ -182,10 +182,6 @@ class CollectionCreateForm(FlaskForm):
 
 def get_gifs_from_giphy(search_string):
     """ Returns data from Giphy API with up to 5 gifs corresponding to the search input"""
-    # baseurl = "https://api.giphy.com/v1/gifs/search"
-    # data = requests.get(baseurl+'?q={}&api_key={}&limit=5'.format(search_string,api_key))
-    # results = json.loads(data.text)
-    # return results['data']
     baseurl = "https://api.giphy.com/v1/gifs/search?q={}&api_key={}&limit=5".format(search_string, api_key)
     # TODO 364: This function should make a request to the Giphy API using the input search_string, and your api_key (imported at the top of this file)
     r = requests.get(baseurl).text
